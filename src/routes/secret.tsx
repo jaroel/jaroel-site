@@ -1,3 +1,4 @@
+import { Title } from "@solidjs/meta";
 import { A } from "@solidjs/router";
 import { Show, createSignal } from "solid-js";
 
@@ -6,6 +7,7 @@ export default function Secret() {
 
   return (
     <main class="text-center mx-auto text-gray-700 p-4">
+      <Title>Say, here's an interesting one:</Title>
       <h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">
         Secret page!
       </h1>
