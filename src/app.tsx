@@ -6,23 +6,23 @@ import "./app.css";
 import { Meta, MetaProvider, Title } from "@solidjs/meta";
 
 export default function App() {
-  return (
-    <MetaProvider>
-      <Title>jaroel.nl</Title>
-      <Meta
-        name="description"
-        content="jaroel.nl - doet web dingen en dat soort spul"
-      />
-      <Router
-        root={(props) => (
-          <>
-            <Nav />
-            <Suspense>{props.children}</Suspense>
-          </>
-        )}
-      >
-        <FileRoutes />
-      </Router>
-    </MetaProvider>
-  );
+	return (
+		<MetaProvider>
+			<Title>jaroel.nl</Title>
+			<Meta
+				name="description"
+				content="jaroel.nl - doet web dingen en dat soort spul"
+			/>
+			<Router
+				root={(props) => (
+					<>
+						<Nav />
+						<Suspense>{props.children}</Suspense>
+					</>
+				)}
+			>
+				<FileRoutes />
+			</Router>
+		</MetaProvider>
+	);
 }
