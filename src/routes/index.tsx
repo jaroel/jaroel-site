@@ -9,17 +9,7 @@ export default function Home() {
 			<Counter />
 			<p class="mt-8">Web developer based in Arnhem.</p>
 
-			<p class="mt-8">For more info look at:</p>
-			<ul class="list-disc list-inside ml-4 mb-8">
-				<li>
-					Profile @
-					<a
-						href="http://www.linkedin.com/in/roelbruggink"
-						title="Roel Bruggink's Linked-in profile"
-					>
-						Linked-in
-					</a>
-				</li>
+			<ul class="list-disc list-outside mt-8 mb-8 text-left">
 				<li>
 					Profile @
 					<a
