@@ -4,7 +4,7 @@ export default function Home() {
 	return (
 		<main class="flex flex-col items-center mx-auto text-center text-gray-700 p-4">
 			<h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">
-				Hello world!
+				Roel Bruggink
 			</h1>
 			<Counter />
 			<p class="mt-8">Web developer based in Arnhem.</p>
