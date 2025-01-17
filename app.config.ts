@@ -7,6 +7,7 @@ export default defineConfig({
 		},
 	},
 	server: {
+		preset: "bun",
 		routeRules: {
 			"/_build/assets/**": {
 				headers: { "cache-control": "max-age=31536000, immutable" },
