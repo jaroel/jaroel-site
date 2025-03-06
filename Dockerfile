@@ -8,3 +8,4 @@ FROM gcr.io/distroless/nodejs22-debian12
 WORKDIR /app/
 COPY --from=builder /app/.output /app/
 CMD ["/app/server/index.mjs"]
+EXPOSE 3000
