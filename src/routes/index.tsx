@@ -1,15 +1,15 @@
+import { A } from "@solidjs/router";
 import Counter from "~/components/Counter";
 
 export default function Home() {
 	return (
-		<main class="flex flex-col items-center mx-auto text-center text-gray-700 p-4">
-			<h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">
+		<main class="flex flex-col items-center mx-auto text-center text-gray-700 p-4 space-y-8">
+			<h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase mt-8">
 				Roel Bruggink
 			</h1>
 			<Counter />
-			<p class="mt-8">Web developer based in Arnhem.</p>
-
-			<ul class="list-disc list-outside mt-8 mb-8 text-left">
+			<p>Web developer based in Arnhem.</p>
+			<ul class="list-disc list-outside text-left">
 				<li>
 					Profile @
 					<a
@@ -28,9 +28,19 @@ export default function Home() {
 						mastodon.nl
 					</a>
 				</li>
+				<li>
+					<A href="/resume" title="Roel Bruggink's Resumé">
+						Resumé
+					</A>
+				</li>
+				<li>
+					<A href="/" title="Roel Bruggink's website - you're on it.">
+						Website
+					</A>
+				</li>
 			</ul>
 
-			<table class="text-left">
+			<table class="text-left border-separate">
 				<tbody>
 					<tr>
 						<th>IBAN</th>
