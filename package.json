@@ -10,11 +10,11 @@
 		"@solidjs/meta": "^0.29.4",
 		"@solidjs/router": "^0.15.3",
 		"@solidjs/start": "^1.1.3",
-		"@tailwindcss/vite": "^4.1.3",
+		"@tailwindcss/vite": "^4.1.4",
 		"autoprefixer": "^10.4.21",
 		"postcss": "^8.5.3",
 		"solid-js": "^1.9.5",
-		"tailwindcss": "^4.1.3",
+		"tailwindcss": "^4.1.4",
 		"vinxi": "^0.5.4"
 	},
 	"engines": {
