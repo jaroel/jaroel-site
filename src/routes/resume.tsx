@@ -11,7 +11,6 @@ export default function Resume() {
 				and open source web application development
 			</p>
 			<h2 class="text-2xl text-black">Skills</h2>
-			<p>Your required skillset might be applicable too.</p>
 			<table class="text-left border-separate">
 				<tbody>
 					<tr>
@@ -89,7 +88,7 @@ export default function Resume() {
 				</thead>
 				<tbody>
 					<tr class="align-text-top">
-						<th>2024-current</th>
+						<th>2024-2025</th>
 						<td>Sky Medical Group (via Vicktor)</td>
 						<td>
 							Python / Django RIS application. MRI scan data transformation.
