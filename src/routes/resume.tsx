@@ -2,7 +2,7 @@ export default function Resume() {
 	const webYears = new Date().getFullYear() - 2004;
 	const python_years = new Date().getFullYear() - 2008;
 	return (
-		<main class="flex flex-col items-center mx-auto text-left text-gray-700 p-4 space-y-4 p-6">
+		<main class="flex flex-col items-center mx-auto text-left text-gray-700 space-y-4 p-6 md:w-3xl">
 			<h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase mt-8">
 				Roel Bruggink
 			</h1>
@@ -13,61 +13,42 @@ export default function Resume() {
 			<h2 class="text-2xl text-black">Skills</h2>
 			<table class="text-left border-separate">
 				<tbody>
-					<tr>
+					<tr class="align-text-top">
 						<th>Web</th>
 						<td>{webYears}+ years</td>
 					</tr>
-					<tr>
+					<tr class="align-text-top">
 						<th>Python</th>
 						<td>
 							{python_years}+ years; Plone, Django, Django-Oscar, Pyramid,
 							Flask, Zope, Grok
 						</td>
 					</tr>
-					<tr>
+					<tr class="align-text-top">
 						<th>Frontend</th>
-						<td>
-							Typescript, Javascript, websockets, CSS/SCSS/LESS, React, obviel,
-							SolidJS
-						</td>
+						<td>Typescript, Javascript, Angular</td>
 					</tr>
-					<tr>
+					<tr class="align-text-top">
 						<th>Backend</th>
-						<td>Python, PHP</td>
+						<td>Python</td>
 					</tr>
-					<tr>
-						<th>Tools</th>
-						<td>
-							Git, Buildout, make, RabbitMQ, Redis, Nginx, Apache, HAProxy
-						</td>
-					</tr>
-					<tr>
+					<tr class="align-text-top">
 						<th>CI/CD/builds</th>
-						<td>Jenkins, travis-co, github actions</td>
+						<td>Jenkins, github actions</td>
 					</tr>
-					<tr>
+					<tr class="align-text-top">
 						<th>Data access</th>
 						<td>SQL (MySQL, PostgreSQL, MSSQL), NoSQL (ZODB, REDIS)</td>
 					</tr>
-					<tr>
+					<tr class="align-text-top">
 						<th>Project management style</th>
 						<td>Scrum; agile; fixed-price, scope and/or time</td>
 					</tr>
-					<tr>
+					<tr class="align-text-top">
 						<th>Language</th>
 						<td>
 							Dutch (native), English (full professional), German (Elementary
 							proficiency)
-						</td>
-					</tr>
-					<tr>
-						<th>Cloud</th>
-						<td>Amazon Web Services, custom cloud solution</td>
-					</tr>
-					<tr>
-						<th>Devops</th>
-						<td>
-							Ubuntu/Debian sysadmin, custom deployment tools, DRBD, HAProxy
 						</td>
 					</tr>
 				</tbody>
@@ -83,14 +64,25 @@ export default function Resume() {
 					<tr>
 						<th>When</th>
 						<th>Where</th>
-						<th>What</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr class="align-text-top">
+						<th>2025-</th>
+						<td>Lab Digital</td>
+					</tr>
+					<tr class="align-text-top">
+						<td colSpan="2">
+							Diverse set of web applications ranging from simple content sites
+							to e-commerce shops with multiple mobile apps as frontends.
+						</td>
+					</tr>
+					<tr class="align-text-top">
 						<th>2024-2025</th>
 						<td>Sky Medical Group (via Vicktor)</td>
-						<td>
+					</tr>
+					<tr class="align-text-top">
+						<td colSpan="2">
 							Python / Django RIS application. MRI scan data transformation.
 							TWIIN network connector.
 						</td>
@@ -98,17 +90,23 @@ export default function Resume() {
 					<tr class="align-text-top">
 						<th>2023</th>
 						<td>Kitconcept</td>
-						<td>Plone web projects</td>
+					</tr>
+					<tr class="align-text-top">
+						<td colSpan="2">Plone web projects</td>
 					</tr>
 					<tr class="align-text-top">
 						<th>2023</th>
 						<td>PNZ-Produkte GmbH</td>
-						<td>Plone web project</td>
+					</tr>
+					<tr class="align-text-top">
+						<td colSpan="2">Plone web project</td>
 					</tr>
 					<tr class="align-text-top">
 						<th>2019-2023</th>
 						<td>Minddistrict (NL/DE/EN)</td>
-						<td>
+					</tr>
+					<tr class="align-text-top">
+						<td colSpan="2">
 							Developed in and lead one of the product teams. Product teams had
 							backend devs, frontend devs, UX expert, QA expert, mobile devs. We
 							built software for mental healthcare, privacy and security needed
@@ -122,12 +120,16 @@ export default function Resume() {
 					<tr class="align-text-top">
 						<th>2020</th>
 						<td>Four Digits</td>
-						<td>Plone intranet hosted on Windows with SSO</td>
+					</tr>
+					<tr class="align-text-top">
+						<td colSpan="2">Plone intranet hosted on Windows with SSO</td>
 					</tr>
 					<tr class="align-text-top">
 						<th>2018-2020</th>
 						<td>Highbiza</td>
-						<td>
+					</tr>
+					<tr class="align-text-top">
+						<td colSpan="2">
 							SAAS Webshop - fully managed but customizable webshops which have
 							all dependencies explicitly controlled.
 							Django/Wagtail/PostgreSQL/Varnish/Elastic search
@@ -136,7 +138,9 @@ export default function Resume() {
 					<tr class="align-text-top">
 						<th>2017-2019</th>
 						<td>Kitconcept (Germany/Switzerland/India)</td>
-						<td>
+					</tr>
+					<tr class="align-text-top">
+						<td colSpan="2">
 							Plone based Enterprise social intranet; backend coding + reviewing
 							frontend Angular (1) code + guiding new developers.
 						</td>
@@ -144,18 +148,26 @@ export default function Resume() {
 					<tr class="align-text-top">
 						<th>2017-2019</th>
 						<td>Lab Digital (Utrecht, NL)</td>
-						<td>Multiple Wagtail based projects</td>
+					</tr>
+					<tr class="align-text-top">
+						<td colSpan="2">Multiple Wagtail based projects</td>
 					</tr>
 					<tr class="align-text-top">
 						<th>2017-2019</th>
 						<td>Lukkien (Ede, NL)</td>
-						<td>Multiple Django, Django-Oscar and/or Wagtail projects</td>
+					</tr>
+					<tr class="align-text-top">
+						<td colSpan="2">
+							Multiple Django, Django-Oscar and/or Wagtail projects
+						</td>
 					</tr>
 
 					<tr class="align-text-top">
 						<th>2008-2017</th>
 						<td>Four Digits</td>
-						<td>
+					</tr>
+					<tr class="align-text-top">
+						<td colSpan="2">
 							Worked as part of a team or solo on a wide variety of web
 							applications. Small to midsize public websites; frontend theming
 							as well as backend programming. Mission critical portals and
@@ -167,7 +179,9 @@ export default function Resume() {
 					<tr class="align-text-top">
 						<th>2008-2017</th>
 						<td>Lukkien (via Four Digits)</td>
-						<td>
+					</tr>
+					<tr class="align-text-top">
+						<td colSpan="2">
 							Worked as part of a team on cross media projects. Designed and
 							implemented HTTP/JSON API endpoints. Theming
 						</td>
@@ -176,7 +190,9 @@ export default function Resume() {
 					<tr class="align-text-top">
 						<th>2008-2017</th>
 						<td>Avira (via Four Digits)</td>
-						<td>
+					</tr>
+					<tr class="align-text-top">
+						<td colSpan="2">
 							Worked as part of an international team. On-site in Germany,
 							remote in Arnhem (NL). Frontend; obviel JS (react like), HTML,
 							CSS, websockets. Backend; async Python using Tornado.
@@ -186,7 +202,9 @@ export default function Resume() {
 					<tr class="align-text-top">
 						<th>2004-2008</th>
 						<td>A&M ImpacT Internetdiensten</td>
-						<td>
+					</tr>
+					<tr class="align-text-top">
+						<td colSpan="2">
 							Public facing websites, frontend theming, PHP/MySQL backend.
 							Mission critical portals; theming, backend, workflows, API
 							integration.
@@ -201,7 +219,9 @@ export default function Resume() {
 					<tr class="align-text-top">
 						<th>2016 - 2025</th>
 						<td>Wagtail CMS</td>
-						<td>
+					</tr>
+					<tr class="align-text-top">
+						<td colSpan="2">
 							<ul class="list-disc list-inside text-left">
 								<li>Contributor</li>
 								<li>Attended multiple sprints</li>
@@ -211,7 +231,9 @@ export default function Resume() {
 					<tr class="align-text-top">
 						<th>2008 - 2024</th>
 						<td>Plone CMS</td>
-						<td>
+					</tr>
+					<tr class="align-text-top">
+						<td colSpan="2">
 							<ul class="list-disc list-inside text-left">
 								<li>
 									Core developer for the Plone CMS project; development,
