@@ -46,10 +46,7 @@ export default function Resume() {
 					</tr>
 					<tr class="align-text-top">
 						<th>Language</th>
-						<td>
-							Dutch (native), English (full professional), German (Elementary
-							proficiency)
-						</td>
+						<td>Dutch (native), English (full professional)</td>
 					</tr>
 				</tbody>
 			</table>
