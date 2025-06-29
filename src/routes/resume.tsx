@@ -20,7 +20,7 @@ export default function Resume() {
 					<tr class="align-text-top">
 						<th>Python</th>
 						<td>
-							{python_years}+ years; Plone, Django, Django-Oscar, Pyramid,
+							{python_years}+ years; Plone, Django, Pyramid,
 							Flask, Zope, Grok
 						</td>
 					</tr>
@@ -31,14 +31,6 @@ export default function Resume() {
 					<tr class="align-text-top">
 						<th>Backend</th>
 						<td>Python</td>
-					</tr>
-					<tr class="align-text-top">
-						<th>CI/CD/builds</th>
-						<td>Jenkins, github actions</td>
-					</tr>
-					<tr class="align-text-top">
-						<th>Data access</th>
-						<td>SQL (MySQL, PostgreSQL, MSSQL), NoSQL (ZODB, REDIS)</td>
 					</tr>
 					<tr class="align-text-top">
 						<th>Project management style</th>
