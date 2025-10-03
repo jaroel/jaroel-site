@@ -9,12 +9,12 @@
 	"dependencies": {
 		"@solidjs/meta": "^0.29.4",
 		"@solidjs/router": "^0.15.3",
-		"@solidjs/start": "^1.1.7",
-		"@tailwindcss/vite": "^4.1.13",
+		"@solidjs/start": "^1.2.0",
+		"@tailwindcss/vite": "^4.1.14",
 		"autoprefixer": "^10.4.21",
 		"postcss": "^8.5.6",
 		"solid-js": "^1.9.9",
-		"tailwindcss": "^4.1.13",
+		"tailwindcss": "^4.1.14",
 		"vinxi": "^0.5.8"
 	},
 	"engines": {
