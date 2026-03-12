@@ -1,11 +1,14 @@
-FROM node:22 AS builder
+FROM oven/bun:1 AS builder
 WORKDIR /app/
 COPY . /app/
-RUN npm install -g pnpm && pnpm install --frozen-lockfile
-RUN pnpm run build
+ENV NODE_ENV=production
+RUN bun install --frozen-lockfile
+RUN bun run lint
+#RUN bun run test --run
+RUN bun run build
 
-FROM gcr.io/distroless/nodejs22-debian12
+FROM oven/bun:1
 WORKDIR /app/
 COPY --from=builder /app/.output /app/
+ENV NODE_ENV=production
 CMD ["/app/server/index.mjs"]
-EXPOSE 3000
