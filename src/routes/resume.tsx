@@ -2,8 +2,8 @@ export default function Resume() {
   const webYears = new Date().getFullYear() - 2004;
   const python_years = new Date().getFullYear() - 2008;
   return (
-    <main class="flex flex-col items-center mx-auto text-left text-gray-700 space-y-4 p-6 md:w-3xl">
-      <h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase mt-8">
+    <main class="mx-auto flex flex-col items-center space-y-4 p-6 text-left text-gray-700 md:w-3xl">
+      <h1 class="max-6-xs mt-8 font-thin text-6xl text-sky-700 uppercase">
         Roel Bruggink
       </h1>
       <p class="mt-8">
@@ -11,7 +11,7 @@ export default function Resume() {
         closed and open source web application development
       </p>
       <h2 class="text-2xl text-black">Skills</h2>
-      <table class="text-left border-separate">
+      <table class="border-separate text-left">
         <tbody>
           <tr class="align-text-top">
             <th>Web</th>
@@ -47,7 +47,7 @@ export default function Resume() {
 
       <h2 class="text-2xl text-black">Project history</h2>
 
-      <table class="text-left border-separate">
+      <table class="border-separate text-left">
         <thead>
           <tr>
             <th>When</th>
@@ -56,7 +56,7 @@ export default function Resume() {
         </thead>
         <tbody>
           <tr class="align-text-top">
-            <th>2025-</th>
+            <th>2025-2026</th>
             <td>Lab Digital</td>
           </tr>
           <tr class="align-text-top">
@@ -202,7 +202,7 @@ export default function Resume() {
       </table>
 
       <h2 class="text-2xl text-black">Community work</h2>
-      <table class="text-left border-separate">
+      <table class="border-separate text-left">
         <tbody>
           <tr class="align-text-top">
             <th>2016 - 2025</th>
@@ -210,7 +210,7 @@ export default function Resume() {
           </tr>
           <tr class="align-text-top">
             <td colSpan="2">
-              <ul class="list-disc list-inside text-left">
+              <ul class="list-inside list-disc text-left">
                 <li>Contributor</li>
                 <li>Attended multiple sprints</li>
               </ul>
@@ -222,7 +222,7 @@ export default function Resume() {
           </tr>
           <tr class="align-text-top">
             <td colSpan="2">
-              <ul class="list-disc list-inside text-left">
+              <ul class="list-inside list-disc text-left">
                 <li>
                   Core developer for the Plone CMS project; development,
                   discussions, improvement proposals
@@ -244,7 +244,7 @@ export default function Resume() {
       </table>
 
       <h2 class="text-2xl text-black">Education</h2>
-      <table class="text-left border-separate">
+      <table class="border-separate text-left">
         <tbody>
           <tr class="align-text-top">
             <th>2013</th>
