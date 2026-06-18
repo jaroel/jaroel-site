@@ -1,14 +1,14 @@
 import { Title } from "@solidjs/meta";
 import { A } from "@solidjs/router";
-import { Show, createSignal } from "solid-js";
+import { createSignal, Show } from "solid-js";
 
 export default function Secret() {
   const [password, setPassword] = createSignal("");
 
   return (
-    <main class="text-center mx-auto text-gray-700 p-4">
+    <main class="mx-auto p-4 text-center text-gray-700">
       <Title>Say, here's an interesting one:</Title>
-      <h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">
+      <h1 class="max-6-xs my-16 font-thin text-6xl text-sky-700 uppercase">
         Secret page!
       </h1>
       <p class="my-4">What's the password?</p>

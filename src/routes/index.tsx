@@ -3,13 +3,13 @@ import Counter from "~/components/Counter";
 
 export default function Home() {
   return (
-    <main class="flex flex-col items-center mx-auto text-center text-gray-700 p-4 space-y-8">
-      <h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase mt-8">
+    <main class="mx-auto flex flex-col items-center space-y-8 p-4 text-center text-gray-700">
+      <h1 class="max-6-xs mt-8 font-thin text-6xl text-sky-700 uppercase">
         Roel Bruggink
       </h1>
       <Counter />
       <p>Web developer based in Arnhem.</p>
-      <ul class="list-disc list-outside text-left">
+      <ul class="list-outside list-disc text-left">
         <li>
           Profile @
           <a
@@ -40,7 +40,7 @@ export default function Home() {
         </li>
       </ul>
 
-      <table class="text-left border-separate">
+      <table class="border-separate text-left">
         <tbody>
           <tr>
             <th>IBAN</th>

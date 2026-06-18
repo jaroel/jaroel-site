@@ -19,7 +19,7 @@ export default function Counter() {
   return (
     <button
       type="button"
-      class="min-w-[200px] rounded-full bg-gray-100 border-2 border-gray-300 focus:border-gray-400 active:border-gray-400 px-[2rem] py-[1rem]"
+      class="min-w-50 rounded-full border-2 border-gray-300 bg-gray-100 px-8 py-4 focus:border-gray-400 active:border-gray-400"
       onClick={() => setCount(count() + 1)}
     >
       {messages[count()] ?? count()}
