@@ -6,22 +6,13 @@ export default function NotFound() {
       <h1 class="max-6-xs my-16 font-thin text-6xl text-sky-700 uppercase">
         Not Found
       </h1>
-      <p class="mt-8">
-        Visit{" "}
-        <a
-          href="https://solidjs.com"
-          target="_blank"
-          class="text-sky-600 hover:underline"
-          rel="noreferrer"
-        >
-          solidjs.com
-        </a>{" "}
-        to learn how to build Solid apps.
-      </p>
-      <p class="my-4">
+      <p class="mt-8">Welcome to the lost-and-found section of the website.</p>
+      <p>
+        Currently we don't have the page you've requested, but we do have a nice{" "}
         <A href="/" class="text-sky-600 hover:underline">
-          Home
-        </A>
+          home
+        </A>{" "}
+        page to offer.
       </p>
     </main>
   );
