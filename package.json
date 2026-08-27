@@ -6,6 +6,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "serve": "bun server.js",
+    "serve:ts": "bun server.bun.ts",
     "test": "vitest",
     "lint": "biome lint src"
   },
@@ -24,6 +25,7 @@
     "vite": "^8.2.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.10"
+    "@biomejs/biome": "^2.5.10",
+    "@types/bun": "^1.4.0"
   }
 }
