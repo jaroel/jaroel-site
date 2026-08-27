@@ -4,13 +4,13 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "jsx": "preserve",
-    "jsxImportSource": "solid-js",
+    "jsxImportSource": "@solidjs/web",
     "allowJs": true,
     "allowImportingTsExtensions": true,
     "noEmit": true,
     "strict": true,
     "types": [
-      "@solidjs/start/env",
+      "vite/client",
     ],
     "isolatedModules": true,
     "paths": {
