@@ -53,6 +53,10 @@ export default function Home() {
             <th>COC/KvK</th>
             <td>68363427</td>
           </tr>
+          <tr>
+            <th>email</th>
+            <td>roel@jaroel.nl</td>
+          </tr>
         </tbody>
       </table>
     </main>
