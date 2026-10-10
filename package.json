@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@solidjs/meta": "1.0.0-next.2",
-    "@solidjs/router": "2.0.0-next.18",
-    "@solidjs/vite-plugin": "3.0.0-next.47",
+    "@solidjs/router": "2.0.0-next.38",
+    "@solidjs/vite-plugin": "3.0.0-next.49",
     "@solidjs/web": "2.0.0-rc.14",
     "filesystem-routing": "0.4.0",
     "solid-js": "2.0.0-rc.14"
@@ -25,7 +25,7 @@
     "@biomejs/biome": "^2.5.15",
     "@tailwindcss/vite": "^4.3.3",
     "@types/bun": "^1.4.2",
-    "happy-dom": "^20.14.5",
+    "happy-dom": "^20.14.6",
     "tailwindcss": "^4.3.3",
     "vite": "^8.3.4",
     "vitest": "^5.0.3"
