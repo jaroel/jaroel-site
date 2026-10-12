@@ -1,4 +1,3 @@
-import { A } from "@solidjs/router";
 import Counter from "~/components/Counter";
 
 export default function Home() {
@@ -29,14 +28,14 @@ export default function Home() {
           </a>
         </li>
         <li>
-          <A href="/resume" title="Roel Bruggink's Resumé">
+          <a href="/resume" title="Roel Bruggink's Resumé">
             Resumé
-          </A>
+          </a>
         </li>
         <li>
-          <A href="/" title="Roel Bruggink's website - you're on it.">
+          <a href="/" title="Roel Bruggink's website - you're on it.">
             Website
-          </A>
+          </a>
         </li>
       </ul>
 

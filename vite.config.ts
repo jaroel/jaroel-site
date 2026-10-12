@@ -1,28 +1,26 @@
 import { defineConfig } from "vite";
-import { nitro } from "nitro/vite";
-import { solidStart } from "@solidjs/start/config";
+import { fileRoutes } from "filesystem-routing/vite";
+import solid from "@solidjs/vite-plugin";
 import tailwindcss from "@tailwindcss/vite";
+import { fileURLToPath } from "node:url";
 
 export default defineConfig({
-  plugins: [solidStart(), tailwindcss(), nitro()],
+  plugins: [
+    solid({
+      start: true,
+      ssr: true,
+      extensions: [".tsx"],
+    }),
+    tailwindcss(),
+    fileRoutes(),
+  ],
+  resolve: {
+    alias: {
+      "~": fileURLToPath(new URL("./src", import.meta.url)),
+    },
+  },
   build: {
     reportCompressedSize: false,
-  },
-  nitro: {
-    preset: "bun",
-    prerender: {
-      routes: ["/", "/resume", "/secret"],
-    },
-    routeRules: {
-      "/_build/assets/**": {
-        headers: { "cache-control": "max-age=31536000, immutable" },
-      },
-      "/_server/assets/**": {
-        headers: { "cache-control": "max-age=31536000, immutable" },
-      },
-      "/assets/**": {
-        headers: { "cache-control": "max-age=31536000, immutable" },
-      },
-    },
+    target: "esnext",
   },
 });

@@ -1,5 +1,4 @@
 import { Title } from "@solidjs/meta";
-import { A } from "@solidjs/router";
 import { createSignal, Show } from "solid-js";
 
 export default function Secret() {
@@ -21,9 +20,9 @@ export default function Secret() {
       />
 
       <p class="my-8">
-        <A href="/" class="text-sky-600 hover:underline">
+        <a href="/" class="text-sky-600 hover:underline">
           Home
-        </A>
+        </a>
         {" - "}
         <span>Secret page</span>
       </p>
