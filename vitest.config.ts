@@ -1,5 +1,6 @@
 import { fileURLToPath } from "node:url";
 import solid from "@solidjs/vite-plugin";
+import { fileRoutes } from "filesystem-routing/vite";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
@@ -9,6 +10,7 @@ export default defineConfig({
       ssr: true,
       extensions: [".tsx"],
     }),
+    fileRoutes(),
   ],
   resolve: {
     alias: {
