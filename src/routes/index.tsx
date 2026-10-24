@@ -3,7 +3,7 @@ import Counter from "~/components/Counter";
 export default function Home() {
   return (
     <main class="mx-auto flex flex-col items-center space-y-8 p-4 text-center text-gray-700">
-      <h1 class="max-6-xs mt-8 font-thin text-6xl text-sky-700 uppercase">
+      <h1 class="max-6-xs mt-8 text-6xl font-thin text-sky-700 uppercase">
         Roel Bruggink
       </h1>
       <Counter />

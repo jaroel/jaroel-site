@@ -7,7 +7,7 @@ export default function Secret() {
   return (
     <main class="mx-auto p-4 text-center text-gray-700">
       <Title>Say, here's an interesting one:</Title>
-      <h1 class="max-6-xs my-16 font-thin text-6xl text-sky-700 uppercase">
+      <h1 class="max-6-xs my-16 text-6xl font-thin text-sky-700 uppercase">
         Secret page!
       </h1>
       <p class="my-4">What's the password?</p>
