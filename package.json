@@ -11,23 +11,23 @@
     "lint": "biome lint src"
   },
   "engines": {
-    "bun": ">=1.4"
+    "bun": ">=1.4.4"
   },
   "dependencies": {
     "@solidjs/meta": "1.0.0-next.2",
-    "@solidjs/router": "2.0.0-next.38",
-    "@solidjs/vite-plugin": "3.0.0-next.49",
-    "@solidjs/web": "2.0.0-rc.14",
-    "filesystem-routing": "0.4.0",
-    "solid-js": "2.0.0-rc.14"
+    "@solidjs/router": "2.0.0-next.42",
+    "@solidjs/vite-plugin": "3.0.0-next.51",
+    "@solidjs/web": "2.0.0-rc.18",
+    "filesystem-routing": "0.4.1",
+    "solid-js": "2.0.0-rc.18"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.15",
+    "@biomejs/biome": "^2.6.2",
     "@tailwindcss/vite": "^4.3.3",
-    "@types/bun": "^1.4.3",
-    "happy-dom": "^20.14.6",
+    "@types/bun": "^1.4.4",
+    "happy-dom": "^21.0.4",
     "tailwindcss": "^4.3.3",
-    "vite": "^8.3.4",
-    "vitest": "^5.0.4"
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
   }
 }
