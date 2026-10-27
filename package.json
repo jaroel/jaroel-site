@@ -14,6 +14,7 @@
     "bun": ">=1.4.4"
   },
   "dependencies": {
+    "@responsive-image/solid": "^2.1.0",
     "@solidjs/meta": "1.0.0-next.2",
     "@solidjs/router": "2.0.0-next.42",
     "@solidjs/vite-plugin": "3.0.0-next.51",
@@ -23,6 +24,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.6.2",
+    "@responsive-image/core": "^2.1.1",
+    "@responsive-image/vite-plugin": "^3.0.1",
     "@tailwindcss/vite": "^4.3.3",
     "@types/bun": "^1.4.4",
     "happy-dom": "^21.0.4",

@@ -1,5 +1,7 @@
 import { Title } from "@solidjs/meta";
 import { createSignal, Show } from "solid-js";
+import { ResponsiveImage } from "@responsive-image/solid";
+import egg02 from "~/assets/egg02.png?w=400;800&responsive";
 
 export default function Secret() {
   const [password, setPassword] = createSignal("");
@@ -28,8 +30,9 @@ export default function Secret() {
       </p>
 
       <Show when={password() === "Ken sent me."}>
-        <img
-          src="/egg02.png"
+        <ResponsiveImage
+          src={egg02}
+          class="mx-auto h-auto w-full max-w-[800px]"
           alt="A screenshot with text 'Perhaps you need to purchase a copy of Leisure Suit Larry'"
         />
       </Show>

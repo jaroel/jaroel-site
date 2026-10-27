@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import { fileRoutes } from "filesystem-routing/vite";
 import solid from "@solidjs/vite-plugin";
+import { responsiveImage } from "@responsive-image/vite-plugin";
 import tailwindcss from "@tailwindcss/vite";
 import { fileURLToPath } from "node:url";
 
@@ -13,6 +14,7 @@ export default defineConfig({
     }),
     tailwindcss(),
     fileRoutes(),
+    responsiveImage(),
   ],
   resolve: {
     alias: {

@@ -12,7 +12,7 @@ afterEach(() => {
 });
 
 const eggImage = () =>
-  document.querySelector('img[src="/egg02.png"]') as HTMLImageElement | null;
+  document.querySelector("picture img") as HTMLImageElement | null;
 
 test("entering the correct password reveals the image", async () => {
   window.history.pushState({}, "", "/secret");
