@@ -14,10 +14,7 @@ export default function App() {
       {(props) => (
         <>
           <Title>jaroel.nl</Title>
-          <Meta
-            name="description"
-            content="jaroel.nl - doet web dingen en dat soort spul"
-          />
+          <Meta name="description" content="jaroel.nl - doet web dingen en dat soort spul" />
           <Nav />
           <Loading fallback={<main>Loading…</main>}>{props.children}</Loading>
         </>

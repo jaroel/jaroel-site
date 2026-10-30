@@ -1,6 +1,6 @@
 import { render } from "@solidjs/web";
 import { flush } from "solid-js";
-import { afterEach, expect, test, vi } from "vitest";
+import { afterEach, expect, test, vi } from "vite-plus/test";
 import App from "~/app";
 
 let dispose: (() => void) | undefined;
@@ -11,8 +11,7 @@ afterEach(() => {
   document.body.innerHTML = "";
 });
 
-const eggImage = () =>
-  document.querySelector("picture img") as HTMLImageElement | null;
+const eggImage = () => document.querySelector("picture img") as HTMLImageElement | null;
 
 test("entering the correct password reveals the image", async () => {
   window.history.pushState({}, "", "/secret");

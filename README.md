@@ -1,32 +1,58 @@
-# SolidStart
+# jaroel-site
 
-Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
+Personal site. SolidJS 2 (SSR) app built with [Vite+](https://viteplus.dev), Tailwind CSS v4, served in production by Bun on a distroless image.
 
-## Creating a project
+## Requirements
 
-```bash
-# create a new project in the current directory
-npm init solid@latest
-
-# create a new project in my-app
-npm init solid@latest my-app
-```
+- [Bun](https://bun.sh) `>=1.4.4` (declared in `engines`)
+- [Vite+](https://viteplus.dev) CLI (`vp`) — installed as a dev dep, or globally
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+vp install          # install dependencies from bun.lock
+vp dev              # start dev server
 ```
 
-## Building
+## Checks
 
-Solid apps are built with _presets_, which optimise your project for deployment to different environments.
+```bash
+vp check            # format, lint, type check
+vp test             # vitest (happy-dom)
+```
 
-By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different preset, add it to the `devDependencies` in `package.json` and specify in your `app.config.js`.
+`vp check --fix` runs automatically on staged files via `staged` in `vite.config.ts`.
 
-## This project was created with the [Solid CLI](https://solid-cli.netlify.app)
+## Building & running
+
+```bash
+vp build            # outputs dist/client + dist/server
+vp run serve        # = bun server.bun.ts (PORT env, default 3000)
+```
+
+`vp build` produces the SSR bundle; `server.bun.ts` serves static assets from `dist/client` and hands everything else to the Solid request handler in `dist/server/server.js` via `Bun.serve`.
+
+## Docker
+
+```bash
+./build.sh                       # docker build --platform linux/amd64 -t jaroelsite:latest
+./deploy.sh                      # build, push, restart on web1.jaroel.nl
+```
+
+`Dockerfile` is a three-stage build:
+
+1. `deps` — `vp install --prod` for runtime dependencies
+2. `builder` — `vp install`, `vp lint`, `vp build` in the official `ghcr.io/voidzero-dev/vite-plus` image
+3. runtime — `gcr.io/distroless/cc-debian13` with the Bun binary copied in, running `server.bun.ts`
+
+## Structure
+
+```
+src/routes/       file-based routes (filesystem-routing), incl. [...404].tsx
+src/components/   components + colocated *.test.tsx
+src/app.tsx       root app shell (meta, Nav, CSS)
+src/app.css       Tailwind entry
+server.bun.ts     Bun production server
+vite.config.ts    Vite+ config: plugins, aliases, lint/fmt/staged tasks
+vitest.config.ts  test config (same plugins, happy-dom)
+```

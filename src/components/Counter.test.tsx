@@ -1,6 +1,6 @@
 import { flush } from "solid-js";
 import { render } from "@solidjs/web";
-import { afterEach, expect, test } from "vitest";
+import { afterEach, expect, test } from "vite-plus/test";
 import Counter from "./Counter";
 
 let dispose: (() => void) | undefined;
