@@ -3,12 +3,10 @@ export default function Resume() {
   const python_years = new Date().getFullYear() - 2008;
   return (
     <main class="mx-auto flex flex-col items-center space-y-4 p-6 text-left text-gray-700 md:w-3xl">
-      <h1 class="max-6-xs mt-8 text-6xl font-thin text-sky-700 uppercase">
-        Roel Bruggink
-      </h1>
+      <h1 class="max-6-xs mt-8 text-6xl font-thin text-sky-700 uppercase">Roel Bruggink</h1>
       <p class="mt-8">
-        Python web software developer with {webYears}+ years experience in
-        closed and open source web application development
+        Python web software developer with {webYears}+ years experience in closed and open source
+        web application development
       </p>
       <h2 class="text-2xl text-black">Skills</h2>
       <table class="border-separate text-left">
@@ -19,9 +17,7 @@ export default function Resume() {
           </tr>
           <tr class="align-text-top">
             <th>Python</th>
-            <td>
-              {python_years}+ years; Plone, Django, Pyramid, Flask, Zope, Grok
-            </td>
+            <td>{python_years}+ years; Plone, Django, Pyramid, Flask, Zope, Grok</td>
           </tr>
           <tr class="align-text-top">
             <th>Frontend</th>
@@ -60,9 +56,9 @@ export default function Resume() {
             <td>Lab Digital</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
-              Diverse set of web applications ranging from simple content sites
-              to e-commerce shops with multiple mobile apps as frontends.
+            <td colspan="2">
+              Diverse set of web applications ranging from simple content sites to e-commerce shops
+              with multiple mobile apps as frontends.
             </td>
           </tr>
           <tr class="align-text-top">
@@ -70,9 +66,9 @@ export default function Resume() {
             <td>Sky Medical Group (via Vicktor)</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
-              Python / Django RIS application. MRI scan data transformation.
-              TWIIN network connector.
+            <td colspan="2">
+              Python / Django RIS application. MRI scan data transformation. TWIIN network
+              connector.
             </td>
           </tr>
           <tr class="align-text-top">
@@ -80,29 +76,27 @@ export default function Resume() {
             <td>Kitconcept</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">Plone web projects</td>
+            <td colspan="2">Plone web projects</td>
           </tr>
           <tr class="align-text-top">
             <th>2023</th>
             <td>PNZ-Produkte GmbH</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">Plone web project</td>
+            <td colspan="2">Plone web project</td>
           </tr>
           <tr class="align-text-top">
             <th>2019-2023</th>
             <td>Minddistrict (NL/DE/EN)</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
-              Developed in and lead one of the product teams. Product teams had
-              backend devs, frontend devs, UX expert, QA expert, mobile devs. We
-              built software for mental healthcare, privacy and security needed
-              more attention then usual. The tech stack used server driven UI to
-              allow web, Android and iOS apps work more alike and share more
-              logic. Contributed in Leadership sessions for the whole Product
-              circle where we provided feedback on and for others in a
-              leadership position.
+            <td colspan="2">
+              Developed in and lead one of the product teams. Product teams had backend devs,
+              frontend devs, UX expert, QA expert, mobile devs. We built software for mental
+              healthcare, privacy and security needed more attention then usual. The tech stack used
+              server driven UI to allow web, Android and iOS apps work more alike and share more
+              logic. Contributed in Leadership sessions for the whole Product circle where we
+              provided feedback on and for others in a leadership position.
             </td>
           </tr>
           <tr class="align-text-top">
@@ -110,17 +104,16 @@ export default function Resume() {
             <td>Four Digits</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">Plone intranet hosted on Windows with SSO</td>
+            <td colspan="2">Plone intranet hosted on Windows with SSO</td>
           </tr>
           <tr class="align-text-top">
             <th>2018-2020</th>
             <td>Highbiza</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
-              SAAS Webshop - fully managed but customizable webshops which have
-              all dependencies explicitly controlled.
-              Django/Wagtail/PostgreSQL/Varnish/Elastic search
+            <td colspan="2">
+              SAAS Webshop - fully managed but customizable webshops which have all dependencies
+              explicitly controlled. Django/Wagtail/PostgreSQL/Varnish/Elastic search
             </td>
           </tr>
           <tr class="align-text-top">
@@ -128,9 +121,9 @@ export default function Resume() {
             <td>Kitconcept (Germany/Switzerland/India)</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
-              Plone based Enterprise social intranet; backend coding + reviewing
-              frontend Angular (1) code + guiding new developers.
+            <td colspan="2">
+              Plone based Enterprise social intranet; backend coding + reviewing frontend Angular
+              (1) code + guiding new developers.
             </td>
           </tr>
           <tr class="align-text-top">
@@ -138,16 +131,14 @@ export default function Resume() {
             <td>Lab Digital (Utrecht, NL)</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">Multiple Wagtail based projects</td>
+            <td colspan="2">Multiple Wagtail based projects</td>
           </tr>
           <tr class="align-text-top">
             <th>2017-2019</th>
             <td>Lukkien (Ede, NL)</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
-              Multiple Django, Django-Oscar and/or Wagtail projects
-            </td>
+            <td colspan="2">Multiple Django, Django-Oscar and/or Wagtail projects</td>
           </tr>
 
           <tr class="align-text-top">
@@ -155,13 +146,12 @@ export default function Resume() {
             <td>Four Digits</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
-              Worked as part of a team or solo on a wide variety of web
-              applications. Small to midsize public websites; frontend theming
-              as well as backend programming. Mission critical portals and
-              intranets; theming, backend, workflows, API integration. Data
-              migrations from SQL to NoSQL. Real time bidding using Web sockets.
-              Designed and implemented HTTP/JSON API endpoints.
+            <td colspan="2">
+              Worked as part of a team or solo on a wide variety of web applications. Small to
+              midsize public websites; frontend theming as well as backend programming. Mission
+              critical portals and intranets; theming, backend, workflows, API integration. Data
+              migrations from SQL to NoSQL. Real time bidding using Web sockets. Designed and
+              implemented HTTP/JSON API endpoints.
             </td>
           </tr>
           <tr class="align-text-top">
@@ -169,9 +159,9 @@ export default function Resume() {
             <td>Lukkien (via Four Digits)</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
-              Worked as part of a team on cross media projects. Designed and
-              implemented HTTP/JSON API endpoints. Theming
+            <td colspan="2">
+              Worked as part of a team on cross media projects. Designed and implemented HTTP/JSON
+              API endpoints. Theming
             </td>
           </tr>
 
@@ -180,10 +170,10 @@ export default function Resume() {
             <td>Avira (via Four Digits)</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
-              Worked as part of an international team. On-site in Germany,
-              remote in Arnhem (NL). Frontend; obviel JS (react like), HTML,
-              CSS, websockets. Backend; async Python using Tornado.
+            <td colspan="2">
+              Worked as part of an international team. On-site in Germany, remote in Arnhem (NL).
+              Frontend; obviel JS (react like), HTML, CSS, websockets. Backend; async Python using
+              Tornado.
             </td>
           </tr>
 
@@ -192,10 +182,9 @@ export default function Resume() {
             <td>A&M ImpacT Internetdiensten</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
-              Public facing websites, frontend theming, PHP/MySQL backend.
-              Mission critical portals; theming, backend, workflows, API
-              integration.
+            <td colspan="2">
+              Public facing websites, frontend theming, PHP/MySQL backend. Mission critical portals;
+              theming, backend, workflows, API integration.
             </td>
           </tr>
         </tbody>
@@ -209,7 +198,7 @@ export default function Resume() {
             <td>Wagtail CMS</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
+            <td colspan="2">
               <ul class="list-inside list-disc text-left">
                 <li>Contributor</li>
                 <li>Attended multiple sprints</li>
@@ -221,21 +210,17 @@ export default function Resume() {
             <td>Plone CMS</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
+            <td colspan="2">
               <ul class="list-inside list-disc text-left">
                 <li>
-                  Core developer for the Plone CMS project; development,
-                  discussions, improvement proposals
+                  Core developer for the Plone CMS project; development, discussions, improvement
+                  proposals
                 </li>
-                <li>
-                  Framework team member; review and accept Plone improvement
-                  proposals.
-                </li>
+                <li>Framework team member; review and accept Plone improvement proposals.</li>
                 <li>Organized multiple development sprints</li>
                 <li>Attended many development sprints</li>
                 <li>
-                  Part of the driving group behind the Plone REST API and Plone
-                  React-based UI
+                  Part of the driving group behind the Plone REST API and Plone React-based UI
                 </li>
               </ul>
             </td>
@@ -253,8 +238,7 @@ export default function Resume() {
           <tr class="align-text-top">
             <th>2006</th>
             <td>
-              Bachelor of ICT Hogeschool van Arnhem en Nijmegen (HAN University
-              of Applied Sciences)
+              Bachelor of ICT Hogeschool van Arnhem en Nijmegen (HAN University of Applied Sciences)
             </td>
           </tr>
         </tbody>

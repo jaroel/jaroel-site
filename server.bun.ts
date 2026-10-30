@@ -1,10 +1,3 @@
-// Bun-native equivalent of server.js. Bun.serve is web-native, so
-// `handleRequest` (an adapter-agnostic web `Request -> Response` handler
-// that streams the SSR render) is used directly — no node <-> web plumbing
-// like in server.js. Static client assets are still served first, from the
-// same build manifest the handler resolves hashed assets through. Nothing
-// comes from node:* — `Bun.file`, `Bun.serve` and `import.meta.dir` are the
-// whole platform.
 import { handleRequest } from "./dist/server/server.js";
 
 const port = Number(process.env.PORT) || 3000;
@@ -30,7 +23,7 @@ Bun.serve({
       return await handleRequest(req, { event: { nativeEvent: req } });
     } catch (e) {
       console.error(e);
-      return new Response(e.message, { status: 500 });
+      return new Response(e instanceof Error ? e.message : String(e), { status: 500 });
     }
   },
 });

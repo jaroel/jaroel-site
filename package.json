@@ -2,16 +2,8 @@
   "name": "example-with-tailwindcss",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "serve": "bun server.js",
-    "serve:ts": "bun server.bun.ts",
-    "test": "vitest",
-    "lint": "biome lint src"
-  },
-  "engines": {
-    "bun": ">=1.4.4"
+    "serve": "bun server.bun.ts",
+    "prepare": "vp config"
   },
   "dependencies": {
     "@responsive-image/solid": "^2.1.0",
@@ -23,14 +15,20 @@
     "solid-js": "2.0.0-rc.18"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.6.2",
     "@responsive-image/core": "^2.1.1",
     "@responsive-image/vite-plugin": "^3.0.1",
     "@tailwindcss/vite": "^4.3.3",
     "@types/bun": "^1.4.4",
     "happy-dom": "^21.0.4",
     "tailwindcss": "^4.3.3",
-    "vite": "^8.3.5",
-    "vitest": "^5.0.5"
-  }
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.4.0",
+    "vite-plus": "1.4.0"
+  },
+  "overrides": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.4.0"
+  },
+  "engines": {
+    "bun": ">=1.4.4"
+  },
+  "packageManager": "bun"
 }
