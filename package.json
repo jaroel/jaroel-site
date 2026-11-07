@@ -23,14 +23,14 @@
     "solid-js": "2.0.0-rc.18"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.6.2",
+    "@biomejs/biome": "^2.6.6",
     "@responsive-image/core": "^2.1.1",
     "@responsive-image/vite-plugin": "^3.0.1",
-    "@tailwindcss/vite": "^4.3.3",
+    "@tailwindcss/vite": "^4.3.5",
     "@types/bun": "^1.4.4",
     "happy-dom": "^21.0.4",
-    "tailwindcss": "^4.3.3",
-    "vite": "^8.3.5",
-    "vitest": "^5.0.5"
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.6",
+    "vitest": "^5.1.0"
   }
 }
