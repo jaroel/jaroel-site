@@ -204,6 +204,19 @@ export default function Resume() {
       <h2 class="text-2xl text-black">Community work</h2>
       <table class="border-separate text-left">
         <tbody>
+           <tr class="align-text-top">
+            <th>2026</th>
+            <td><a href="https://responsive-image.dev" target="_blank" title="ResponsiveImage: The multi-framework JavaScript library for responsive images.">ResponsiveImage</a></td>
+          </tr>
+          <tr class="align-text-top">
+            <td colSpan="2">
+              ResponsiveImage: The multi-framework JavaScript library for responsive images.
+              <ul class="list-inside list-disc text-left">
+                <li>SolidJS v1/v2 support</li>
+                <li>General improvements across all framework packages</li>
+              </ul>
+            </td>
+          </tr>
           <tr class="align-text-top">
             <th>2016 - 2025</th>
             <td>Wagtail CMS</td>
