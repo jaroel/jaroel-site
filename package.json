@@ -8,10 +8,10 @@
     "serve": "bun server.js",
     "serve:ts": "bun server.bun.ts",
     "test": "vitest",
-    "lint": "biome lint src"
-  },
-  "engines": {
-    "bun": ">=1.4.4"
+    "lint": "oxlint src",
+    "lint:fix": "oxlint --fix src",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
   },
   "dependencies": {
     "@responsive-image/solid": "^2.1.0",
@@ -22,15 +22,20 @@
     "solid-js": "2.0.0-rc.18"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.6.6",
     "@responsive-image/core": "^2.1.1",
     "@responsive-image/vite-plugin": "^3.0.1",
     "@tailwindcss/vite": "^4.3.5",
     "@types/bun": "^1.4.4",
+    "eslint-plugin-solid": "^0.18.1",
     "filesystem-routing": "0.4.1",
     "happy-dom": "^21.0.4",
+    "oxfmt": "^0.77.0",
+    "oxlint": "^1.92.0",
     "tailwindcss": "^4.3.5",
     "vite": "^8.3.6",
     "vitest": "^5.1.0"
+  },
+  "engines": {
+    "bun": ">=1.4.4"
   }
 }

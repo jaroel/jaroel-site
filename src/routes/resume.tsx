@@ -60,7 +60,7 @@ export default function Resume() {
             <td>Lab Digital</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
+            <td colspan="2">
               Diverse set of web applications ranging from simple content sites
               to e-commerce shops with multiple mobile apps as frontends.
             </td>
@@ -70,7 +70,7 @@ export default function Resume() {
             <td>Sky Medical Group (via Vicktor)</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
+            <td colspan="2">
               Python / Django RIS application. MRI scan data transformation.
               TWIIN network connector.
             </td>
@@ -80,21 +80,21 @@ export default function Resume() {
             <td>Kitconcept</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">Plone web projects</td>
+            <td colspan="2">Plone web projects</td>
           </tr>
           <tr class="align-text-top">
             <th>2023</th>
             <td>PNZ-Produkte GmbH</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">Plone web project</td>
+            <td colspan="2">Plone web project</td>
           </tr>
           <tr class="align-text-top">
             <th>2019-2023</th>
             <td>Minddistrict (NL/DE/EN)</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
+            <td colspan="2">
               Developed in and lead one of the product teams. Product teams had
               backend devs, frontend devs, UX expert, QA expert, mobile devs. We
               built software for mental healthcare, privacy and security needed
@@ -110,14 +110,14 @@ export default function Resume() {
             <td>Four Digits</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">Plone intranet hosted on Windows with SSO</td>
+            <td colspan="2">Plone intranet hosted on Windows with SSO</td>
           </tr>
           <tr class="align-text-top">
             <th>2018-2020</th>
             <td>Highbiza</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
+            <td colspan="2">
               SAAS Webshop - fully managed but customizable webshops which have
               all dependencies explicitly controlled.
               Django/Wagtail/PostgreSQL/Varnish/Elastic search
@@ -128,7 +128,7 @@ export default function Resume() {
             <td>Kitconcept (Germany/Switzerland/India)</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
+            <td colspan="2">
               Plone based Enterprise social intranet; backend coding + reviewing
               frontend Angular (1) code + guiding new developers.
             </td>
@@ -138,14 +138,14 @@ export default function Resume() {
             <td>Lab Digital (Utrecht, NL)</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">Multiple Wagtail based projects</td>
+            <td colspan="2">Multiple Wagtail based projects</td>
           </tr>
           <tr class="align-text-top">
             <th>2017-2019</th>
             <td>Lukkien (Ede, NL)</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
+            <td colspan="2">
               Multiple Django, Django-Oscar and/or Wagtail projects
             </td>
           </tr>
@@ -155,7 +155,7 @@ export default function Resume() {
             <td>Four Digits</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
+            <td colspan="2">
               Worked as part of a team or solo on a wide variety of web
               applications. Small to midsize public websites; frontend theming
               as well as backend programming. Mission critical portals and
@@ -169,7 +169,7 @@ export default function Resume() {
             <td>Lukkien (via Four Digits)</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
+            <td colspan="2">
               Worked as part of a team on cross media projects. Designed and
               implemented HTTP/JSON API endpoints. Theming
             </td>
@@ -180,7 +180,7 @@ export default function Resume() {
             <td>Avira (via Four Digits)</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
+            <td colspan="2">
               Worked as part of an international team. On-site in Germany,
               remote in Arnhem (NL). Frontend; obviel JS (react like), HTML,
               CSS, websockets. Backend; async Python using Tornado.
@@ -192,7 +192,7 @@ export default function Resume() {
             <td>A&M ImpacT Internetdiensten</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
+            <td colspan="2">
               Public facing websites, frontend theming, PHP/MySQL backend.
               Mission critical portals; theming, backend, workflows, API
               integration.
@@ -204,13 +204,22 @@ export default function Resume() {
       <h2 class="text-2xl text-black">Community work</h2>
       <table class="border-separate text-left">
         <tbody>
-           <tr class="align-text-top">
+          <tr class="align-text-top">
             <th>2026</th>
-            <td><a href="https://responsive-image.dev" target="_blank" title="ResponsiveImage: The multi-framework JavaScript library for responsive images.">ResponsiveImage</a></td>
+            <td>
+              <a
+                href="https://responsive-image.dev"
+                target="_blank"
+                title="ResponsiveImage: The multi-framework JavaScript library for responsive images."
+              >
+                ResponsiveImage
+              </a>
+            </td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
-              ResponsiveImage: The multi-framework JavaScript library for responsive images.
+            <td colspan="2">
+              ResponsiveImage: The multi-framework JavaScript library for
+              responsive images.
               <ul class="list-inside list-disc text-left">
                 <li>SolidJS v1/v2 support</li>
                 <li>General improvements across all framework packages</li>
@@ -222,7 +231,7 @@ export default function Resume() {
             <td>Wagtail CMS</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
+            <td colspan="2">
               <ul class="list-inside list-disc text-left">
                 <li>Contributor</li>
                 <li>Attended multiple sprints</li>
@@ -234,7 +243,7 @@ export default function Resume() {
             <td>Plone CMS</td>
           </tr>
           <tr class="align-text-top">
-            <td colSpan="2">
+            <td colspan="2">
               <ul class="list-inside list-disc text-left">
                 <li>
                   Core developer for the Plone CMS project; development,
