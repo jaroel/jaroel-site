@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "example-with-tailwindcss",
+      "name": "jaroel-site",
       "dependencies": {
         "@responsive-image/solid": "^2.1.0",
         "@solidjs/meta": "1.0.0-next.2",
