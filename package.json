@@ -8,6 +8,7 @@
     "serve": "bun server.js",
     "serve:ts": "bun server.bun.ts",
     "test": "vitest",
+    "typecheck": "bun check --no-script",
     "lint": "oxlint src",
     "lint:fix": "oxlint --fix src",
     "fmt": "oxfmt",
