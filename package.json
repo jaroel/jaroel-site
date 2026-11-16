@@ -31,10 +31,10 @@
     "filesystem-routing": "0.4.1",
     "happy-dom": "^21.0.4",
     "oxfmt": "^0.77.0",
-    "oxlint": "^1.92.0",
+    "oxlint": "^1.94.0",
     "tailwindcss": "^4.3.5",
     "tsrs": "0.23.0-ts7.1.0-beta",
-    "vite": "^8.3.6",
+    "vite": "^8.3.8",
     "vitest": "^5.1.0"
   },
   "engines": {
