@@ -2,7 +2,9 @@
 
 Repo: jaroel.nl personal site. Read `README.md` for layout and commands.
 
-Stack: SolidJS 2 RC + `@solidjs/vite-plugin` SSR (`start: true`),
+Stack: SolidJS 2 stable (`2.0.0` for `solid-js`, `@solidjs/web`,
+`@solidjs/router`, `@solidjs/meta`, `@solidjs/vite-plugin`) + `@solidjs/vite-plugin`
+SSR (`start: true`),
 `filesystem-routing`, Tailwind v4, Bun. Migrated off solid-start; SolidStart
 docs and tutorials do not apply here.
 
@@ -14,7 +16,7 @@ docs and tutorials do not apply here.
 - 404 check: `curl -s -o /dev/null -w '%{http_code}\n' localhost:3123/nope`
   should print `404`.
 
-## Solid 2 RC is the source of truth
+## Solid 2 is the source of truth
 
 Installed skills ship with the packages. Read them before Solid work:
 
@@ -23,7 +25,8 @@ Installed skills ship with the packages. Read them before Solid work:
 - `node_modules/solid-js/skills/reactivity-diagnostics/SKILL.md`
 - `node_modules/@solidjs/web/skills/server-components/SKILL.md`
 
-Online docs lag the RC. Check installed types before guessing:
+Docs ship in the packages too: `node_modules/solid-js/CHEATSHEET.md`, and
+https://v2.solidjs.com (`/llms.txt`). Check installed types before guessing:
 
 - `node_modules/@solidjs/web/types/*.d.ts` — `httpStatus`, `getRequestEvent`,
   render APIs.

@@ -1,6 +1,6 @@
 # jaroel.nl
 
-Personal site. SolidJS 2 (RC) with SSR through `@solidjs/vite-plugin`,
+Personal site. SolidJS 2 with SSR through `@solidjs/vite-plugin`,
 file-based routes via `filesystem-routing`, Tailwind CSS v4, Bun.
 
 ## Commands
