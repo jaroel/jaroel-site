@@ -30,9 +30,12 @@ Bun.serve({
       return await handleRequest(req, { event: { nativeEvent: req } });
     } catch (e) {
       console.error(e);
-      return new Response(e instanceof Error ? e.message : "Internal Server Error", {
-        status: 500,
-      });
+      return new Response(
+        e instanceof Error ? e.message : "Internal Server Error",
+        {
+          status: 500,
+        },
+      );
     }
   },
 });
