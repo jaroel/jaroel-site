@@ -11,8 +11,7 @@ Use Bun (repo has `bun.lock`).
 bun install
 bun run dev          # Vite dev server; use the URL it prints
 bun run build        # SSR build into dist/client + dist/server
-bun run serve        # Node prod server (server.js); build first
-bun run serve:ts     # Bun-native prod server (server.bun.ts); build first
+bun run serve        # Bun prod server (server.bun.ts); build first
 bun run test --run   # Vitest suite, <1s
 bun run lint         # oxlint
 bun run typecheck    # bundle-wide type check (bun check)
@@ -28,8 +27,7 @@ bun run fmt          # oxfmt
 - `src/app.css` — Tailwind entry
 - `vite.config.ts`, `vitest.config.ts` — solid SSR + tailwind + fileRoutes +
   responsiveImage plugins
-- `server.js` — Node production adapter for `dist/server/server.js`
-- `server.bun.ts` — Bun.serve production adapter
+- `server.bun.ts` — Bun.serve production adapter for `dist/server/server.js`
 - `build.sh`, `push.sh`, `deploy.sh`, `Dockerfile` — Docker build, registry
   push, server restart
 

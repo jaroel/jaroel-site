@@ -40,13 +40,13 @@ Grep the `.d.ts` files first. Only read `dist/*.js` when types are missing.
 ## Gotchas
 
 - `dist/server/server.js` is the built request handler, not a server. Never
-  run it directly. Start `server.js` (Node) or `server.bun.ts` (Bun).
+  run it directly. Start `server.bun.ts` with `bun run serve`.
 - `bun run serve` needs a prior `bun run build`; it serves `dist/client` and
   `dist/server`.
 - Dev port is whatever Vite prints. Do not assume 3000 or 5173.
 - 404 status comes from `export const route = { preload: () => httpStatus(404) }`
   in `src/routes/[...404].tsx`, imported from `@solidjs/web`.
-- Deploy bundles `server.bun.ts` to `dist/server.bun.js`; `server.js` is only
-  for local Node serving.
+- Deploy bundles `server.bun.ts` to `dist/server.bun.js`, which the image
+  runs as `/app/server.bun.js`.
 
 Keep this file current when the stack, scripts, or layout change.
