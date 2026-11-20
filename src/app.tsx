@@ -19,7 +19,7 @@ export default function App() {
           <Title>jaroel.nl</Title>
           <Meta
             name="description"
-            content="jaroel.nl - doet web dingen en dat soort spul"
+            content="jaroel.nl - web things and that kind of stuff"
           />
           <CounterContext value={counter}>
             <Nav />

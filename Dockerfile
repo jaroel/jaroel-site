@@ -3,6 +3,8 @@ WORKDIR /app/
 COPY . /app/
 RUN bun install --frozen-lockfile
 RUN bun run lint
+RUN bun run typecheck
+RUN bun run test --run
 ENV NODE_ENV=production
 RUN bun run build
 RUN bun build ./server.bun.ts --target=bun --outfile=./dist/server.bun.js

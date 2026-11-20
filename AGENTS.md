@@ -13,7 +13,7 @@ docs and tutorials do not apply here.
 
 ## Fast verification
 
-- `bun run test --run` — full suite, 3 tests, under a second.
+- `bun run test --run` — full suite, 8 tests, under a second.
 - `bun run typecheck` — Bun's native type check (`bun check --no-script`).
 - `bun run build`, then `PORT=3123 bun run serve`.
 - 404 check: `curl -s -o /dev/null -w '%{http_code}\n' localhost:3123/nope`

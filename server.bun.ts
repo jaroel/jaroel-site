@@ -20,7 +20,13 @@ Bun.serve({
     // Response body; `.type` is inferred from the file extension.
     if (url.pathname !== "/" && !url.pathname.includes("..")) {
       const file = Bun.file(clientRoot + url.pathname);
-      if (await file.exists()) return new Response(file);
+      if (await file.exists()) {
+        // Hashed build assets never change under the same URL.
+        const headers = url.pathname.startsWith("/assets/")
+          ? { "Cache-Control": "public, max-age=31536000, immutable" }
+          : undefined;
+        return new Response(file, { headers });
+      }
     }
 
     try {

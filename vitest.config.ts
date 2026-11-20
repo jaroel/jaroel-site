@@ -21,5 +21,7 @@ export default defineConfig({
   },
   test: {
     environment: "happy-dom",
+    // Bun's child_process has no channel.unref; the default forks pool dies.
+    pool: "threads",
   },
 });

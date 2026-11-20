@@ -1,36 +1,39 @@
-import { render } from "@solidjs/web";
 import { flush } from "solid-js";
-import { afterEach, expect, test, vi } from "vitest";
+import { expect, test, vi } from "vitest";
 import App from "~/app";
-
-let dispose: (() => void) | undefined;
-
-afterEach(() => {
-  dispose?.();
-  dispose = undefined;
-  document.body.innerHTML = "";
-});
+import { mount } from "~/test/mount";
 
 const eggImage = () =>
   document.querySelector("picture img") as HTMLImageElement | null;
 
-test("entering the correct password reveals the image", async () => {
+async function renderSecret() {
   window.history.pushState({}, "", "/secret");
+  const container = mount(() => <App />);
 
-  const container = document.createElement("div");
-  document.body.appendChild(container);
-  dispose = render(() => <App />, container);
-
-  const input = await vi.waitFor(() => {
+  return await vi.waitFor(() => {
     flush();
     const el = container.querySelector('input[type="password"]');
     expect(el).not.toBeNull();
     return el as HTMLInputElement;
   });
+}
+
+test("entering the correct password reveals the image", async () => {
+  const input = await renderSecret();
 
   expect(eggImage()).toBeNull();
 
   input.value = "Ken sent me.";
+  input.dispatchEvent(new Event("input", { bubbles: true }));
+  flush();
+
+  expect(eggImage()).not.toBeNull();
+});
+
+test("pasted passwords may carry whitespace", async () => {
+  const input = await renderSecret();
+
+  input.value = "  Ken sent me.\n";
   input.dispatchEvent(new Event("input", { bubbles: true }));
   flush();
 

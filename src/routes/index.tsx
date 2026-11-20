@@ -42,19 +42,19 @@ export default function Home() {
       <table class="border-separate text-left">
         <tbody>
           <tr>
-            <th>IBAN</th>
+            <th scope="row">IBAN</th>
             <td>NL36RABO0317849298</td>
           </tr>
           <tr>
-            <th>VAT/BTW-id</th>
+            <th scope="row">VAT/BTW-id</th>
             <td>NL001865459B90</td>
           </tr>
           <tr>
-            <th>COC/KvK</th>
+            <th scope="row">COC/KvK</th>
             <td>68363427</td>
           </tr>
           <tr>
-            <th>email</th>
+            <th scope="row">email</th>
             <td>roel@jaroel.nl</td>
           </tr>
         </tbody>

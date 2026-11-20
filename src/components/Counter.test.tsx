@@ -1,28 +1,15 @@
 import { flush } from "solid-js";
-import { render } from "@solidjs/web";
-import { afterEach, expect, test } from "vitest";
+import { expect, test } from "vitest";
 import Counter from "./Counter";
 import { CounterContext, createCounter } from "~/counter-state";
-
-let dispose: (() => void) | undefined;
-
-afterEach(() => {
-  dispose?.();
-  dispose = undefined;
-  document.body.innerHTML = "";
-});
+import { mount } from "~/test/mount";
 
 test("click changes the message", () => {
-  const container = document.createElement("div");
-  document.body.appendChild(container);
-  dispose = render(
-    () => (
-      <CounterContext value={createCounter()}>
-        <Counter />
-      </CounterContext>
-    ),
-    container,
-  );
+  const container = mount(() => (
+    <CounterContext value={createCounter()}>
+      <Counter />
+    </CounterContext>
+  ));
 
   const button = container.querySelector("button");
   expect(button).not.toBeNull();

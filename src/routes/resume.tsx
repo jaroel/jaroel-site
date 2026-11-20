@@ -21,29 +21,29 @@ export default function Resume() {
       <table class="border-separate text-left">
         <tbody>
           <tr class="align-text-top">
-            <th>Web</th>
+            <th scope="row">Web</th>
             <td>{webYears}+ years</td>
           </tr>
           <tr class="align-text-top">
-            <th>Python</th>
+            <th scope="row">Python</th>
             <td>
               {python_years}+ years; Plone, Django, Pyramid, Flask, Zope, Grok
             </td>
           </tr>
           <tr class="align-text-top">
-            <th>Frontend</th>
+            <th scope="row">Frontend</th>
             <td>Typescript, Javascript, React, SolidJS, Angular</td>
           </tr>
           <tr class="align-text-top">
-            <th>Backend</th>
+            <th scope="row">Backend</th>
             <td>Python, Typescript</td>
           </tr>
           <tr class="align-text-top">
-            <th>Project management style</th>
+            <th scope="row">Project management style</th>
             <td>Scrum; agile; fixed-price, scope and/or time</td>
           </tr>
           <tr class="align-text-top">
-            <th>Language</th>
+            <th scope="row">Language</th>
             <td>Dutch (native), English (full professional)</td>
           </tr>
         </tbody>
@@ -57,13 +57,13 @@ export default function Resume() {
       <table class="border-separate text-left">
         <thead>
           <tr>
-            <th>When</th>
-            <th>Where</th>
+            <th scope="col">When</th>
+            <th scope="col">Where</th>
           </tr>
         </thead>
         <tbody>
           <tr class="align-text-top">
-            <th>2025-2026</th>
+            <th scope="row">2025-2026</th>
             <td>Lab Digital</td>
           </tr>
           <tr class="align-text-top">
@@ -73,7 +73,7 @@ export default function Resume() {
             </td>
           </tr>
           <tr class="align-text-top">
-            <th>2024-2025</th>
+            <th scope="row">2024-2025</th>
             <td>Sky Medical Group (via Vicktor)</td>
           </tr>
           <tr class="align-text-top">
@@ -83,21 +83,21 @@ export default function Resume() {
             </td>
           </tr>
           <tr class="align-text-top">
-            <th>2023</th>
+            <th scope="row">2023</th>
             <td>Kitconcept</td>
           </tr>
           <tr class="align-text-top">
             <td colspan="2">Plone web projects</td>
           </tr>
           <tr class="align-text-top">
-            <th>2023</th>
+            <th scope="row">2023</th>
             <td>PNZ-Produkte GmbH</td>
           </tr>
           <tr class="align-text-top">
             <td colspan="2">Plone web project</td>
           </tr>
           <tr class="align-text-top">
-            <th>2019-2023</th>
+            <th scope="row">2019-2023</th>
             <td>Minddistrict (NL/DE/EN)</td>
           </tr>
           <tr class="align-text-top">
@@ -113,14 +113,14 @@ export default function Resume() {
             </td>
           </tr>
           <tr class="align-text-top">
-            <th>2020</th>
+            <th scope="row">2020</th>
             <td>Four Digits</td>
           </tr>
           <tr class="align-text-top">
             <td colspan="2">Plone intranet hosted on Windows with SSO</td>
           </tr>
           <tr class="align-text-top">
-            <th>2018-2020</th>
+            <th scope="row">2018-2020</th>
             <td>Highbiza</td>
           </tr>
           <tr class="align-text-top">
@@ -131,7 +131,7 @@ export default function Resume() {
             </td>
           </tr>
           <tr class="align-text-top">
-            <th>2017-2019</th>
+            <th scope="row">2017-2019</th>
             <td>Kitconcept (Germany/Switzerland/India)</td>
           </tr>
           <tr class="align-text-top">
@@ -141,14 +141,14 @@ export default function Resume() {
             </td>
           </tr>
           <tr class="align-text-top">
-            <th>2017-2019</th>
+            <th scope="row">2017-2019</th>
             <td>Lab Digital (Utrecht, NL)</td>
           </tr>
           <tr class="align-text-top">
             <td colspan="2">Multiple Wagtail based projects</td>
           </tr>
           <tr class="align-text-top">
-            <th>2017-2019</th>
+            <th scope="row">2017-2019</th>
             <td>Lukkien (Ede, NL)</td>
           </tr>
           <tr class="align-text-top">
@@ -158,7 +158,7 @@ export default function Resume() {
           </tr>
 
           <tr class="align-text-top">
-            <th>2008-2017</th>
+            <th scope="row">2008-2017</th>
             <td>Four Digits</td>
           </tr>
           <tr class="align-text-top">
@@ -172,7 +172,7 @@ export default function Resume() {
             </td>
           </tr>
           <tr class="align-text-top">
-            <th>2008-2017</th>
+            <th scope="row">2008-2017</th>
             <td>Lukkien (via Four Digits)</td>
           </tr>
           <tr class="align-text-top">
@@ -183,7 +183,7 @@ export default function Resume() {
           </tr>
 
           <tr class="align-text-top">
-            <th>2008-2017</th>
+            <th scope="row">2008-2017</th>
             <td>Avira (via Four Digits)</td>
           </tr>
           <tr class="align-text-top">
@@ -195,7 +195,7 @@ export default function Resume() {
           </tr>
 
           <tr class="align-text-top">
-            <th>2004-2008</th>
+            <th scope="row">2004-2008</th>
             <td>A&M ImpacT Internetdiensten</td>
           </tr>
           <tr class="align-text-top">
@@ -212,7 +212,7 @@ export default function Resume() {
       <table class="border-separate text-left">
         <tbody>
           <tr class="align-text-top">
-            <th>2026</th>
+            <th scope="row">2026</th>
             <td>
               <a
                 href="https://responsive-image.dev"
@@ -234,7 +234,7 @@ export default function Resume() {
             </td>
           </tr>
           <tr class="align-text-top">
-            <th>2016 - 2025</th>
+            <th scope="row">2016 - 2025</th>
             <td>Wagtail CMS</td>
           </tr>
           <tr class="align-text-top">
@@ -246,7 +246,7 @@ export default function Resume() {
             </td>
           </tr>
           <tr class="align-text-top">
-            <th>2008 - 2024</th>
+            <th scope="row">2008 - 2024</th>
             <td>Plone CMS</td>
           </tr>
           <tr class="align-text-top">
@@ -276,11 +276,11 @@ export default function Resume() {
       <table class="border-separate text-left">
         <tbody>
           <tr class="align-text-top">
-            <th>2013</th>
+            <th scope="row">2013</th>
             <td>PRINCE2 Practitioner License P2R/NLPB178251</td>
           </tr>
           <tr class="align-text-top">
-            <th>2006</th>
+            <th scope="row">2006</th>
             <td>
               Bachelor of ICT Hogeschool van Arnhem en Nijmegen (HAN University
               of Applied Sciences)

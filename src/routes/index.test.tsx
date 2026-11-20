@@ -1,15 +1,7 @@
-import { render } from "@solidjs/web";
 import { flush } from "solid-js";
-import { afterEach, expect, test, vi } from "vitest";
+import { expect, test, vi } from "vitest";
 import App from "~/app";
-
-let dispose: (() => void) | undefined;
-
-afterEach(() => {
-  dispose?.();
-  dispose = undefined;
-  document.body.innerHTML = "";
-});
+import { mount } from "~/test/mount";
 
 const secretLink = () =>
   [...document.querySelectorAll("a")].find(
@@ -17,9 +9,7 @@ const secretLink = () =>
   );
 
 test("clicking the counter six times reveals the secret link", async () => {
-  const container = document.createElement("div");
-  document.body.appendChild(container);
-  dispose = render(() => <App />, container);
+  const container = mount(() => <App />);
 
   // The route is code-split, so wait for the home page to resolve.
   await vi.waitFor(() => {
