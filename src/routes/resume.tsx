@@ -1,9 +1,16 @@
+import { Meta, Title } from "@solidjs/meta";
+
 export default function Resume() {
   const webYears = new Date().getFullYear() - 2004;
   const python_years = new Date().getFullYear() - 2008;
   return (
     <main class="mx-auto flex flex-col items-center space-y-4 p-6 text-left text-gray-700 md:w-3xl">
-      <h1 class="max-6-xs mt-8 text-6xl font-thin text-sky-700 uppercase">
+      <Title>Resumé - jaroel.nl</Title>
+      <Meta
+        name="description"
+        content="Resumé of Roel Bruggink, Python web software developer based in Arnhem."
+      />
+      <h1 class="mt-8 text-6xl font-thin text-sky-700 uppercase">
         Roel Bruggink
       </h1>
       <p class="mt-8">

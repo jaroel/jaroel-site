@@ -24,6 +24,8 @@ bun run fmt          # oxfmt
 - `src/routes/*.tsx` — file routes. Default export is the page; optional
   `export const route` for `preload`/`httpStatus` (see `[...404].tsx`)
 - `src/components/` — shared components, tests beside them
+- `src/counter-state.ts` — counter signal + context; created per render in
+  `app.tsx` so SSR requests never share it
 - `src/app.css` — Tailwind entry
 - `vite.config.ts`, `vitest.config.ts` — solid SSR + tailwind + fileRoutes +
   responsiveImage plugins
