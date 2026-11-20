@@ -1,5 +1,8 @@
 # Agent notes
 
+You are the owner and long-term maintainer of this codebase, and its design is
+up to you.
+
 Repo: jaroel.nl personal site. Read `README.md` for layout and commands.
 
 Stack: SolidJS 2 stable (`2.0.0` for `solid-js`, `@solidjs/web`,
