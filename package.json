@@ -14,25 +14,25 @@
     "fmt:check": "oxfmt --check"
   },
   "dependencies": {
-    "@responsive-image/solid": "^2.1.0",
+    "@responsive-image/solid": "^2.1.1",
     "@solidjs/meta": "2.0.0",
-    "@solidjs/router": "2.0.0",
-    "@solidjs/vite-plugin": "3.0.0",
-    "@solidjs/web": "2.0.0",
-    "solid-js": "2.0.0"
+    "@solidjs/router": "2.0.1",
+    "@solidjs/vite-plugin": "3.0.1",
+    "@solidjs/web": "2.0.3",
+    "solid-js": "2.0.3"
   },
   "devDependencies": {
     "@responsive-image/core": "^2.1.1",
     "@responsive-image/vite-plugin": "^3.0.1",
     "@tailwindcss/vite": "^4.3.5",
     "@types/bun": "^1.4.5",
-    "eslint-plugin-solid": "^0.19.0",
+    "eslint-plugin-solid": "^0.20.1",
     "filesystem-routing": "0.5.0",
     "happy-dom": "^21.0.4",
     "oxfmt": "^0.79.0",
     "oxlint": "^1.94.0",
     "tailwindcss": "^4.3.5",
-    "tsrs": "0.25.0-ts7.1.0-beta",
+    "tsrs": "7.1.0-beta.tsrs4",
     "vite": "^8.3.8",
     "vitest": "^5.1.1"
   },
