@@ -50,6 +50,11 @@ Grep the `.d.ts` files first. Only read `dist/*.js` when types are missing.
 - 404 status comes from `export const route = { preload: () => httpStatus(404) }`
   in `src/routes/[...404].tsx`, imported from `@solidjs/web`.
 - Deploy bundles `server.bun.ts` to `dist/server.bun.js`, which the image
-  runs as `/app/server.bun.js`.
+  runs as `/app/server.bun.js`. The Docker builder stage runs on
+  `$BUILDPLATFORM` (native) and only the Bun binary comes from the target
+  platform: Vite 8.4+ inlines a SIMD build of es-module-lexer for the
+  import-analysis plugin, and Bun/JSC does not enable WASM SIMD under emulated
+  `linux/amd64`, so a target-platform builder fails `vite build` with
+  `wasm-simd is not enabled`. Build output is arch independent.
 
 Keep this file current when the stack, scripts, or layout change.
